@@ -1,0 +1,2801 @@
+<div class="Flex__StyledFlex-sc-1ar0xvd-0 qvBtM">
+  <div aria-hidden="true"></div>
+  <div
+    data-test-id="framework-data-table-container"
+    class="Flex__StyledFlex-sc-1ar0xvd-0 kXwHWq"
+  >
+    <div class="Box__StyledBox-sc-1nxt6jd-0 bzlVHZ">
+      <div
+        data-test-id="table-top-bar"
+        class="Flex__StyledFlex-sc-1ar0xvd-0 hesbrf"
+      >
+        <div class="View__StyledView-sc-12w2o94-0 hMNMjF">
+          <div
+            data-fnd-search-input-wrapper="t"
+            class="SearchInput__Wrapper-k982v8-0 dMfOhr"
+          >
+            <input
+              role="search"
+              data-test-id="crm-object-table-search-bar"
+              tabindex="0"
+              placeholder="Search name or description"
+              type="text"
+              class="TextInput__StyledInput-vqhc45-0 fHKxSL"
+              value=""
+            /><span class="SearchInput__MessageWrapper-k982v8-1 bXLaOI"
+              ><span class="SearchInput__IconWrapper-k982v8-3 llGhGq"
+                ><svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                  data-icon-name="Search"
+                  class="StyledIcon-sc-50rquo-0 ewRdgV"
+                >
+                  <path
+                    d="m29.66 27.7-8.36-8.36c1.4-1.8 2.24-4.09 2.24-6.58C23.54 6.82 18.72 2 12.78 2S2.01 6.82 2.01 12.76s4.82 10.76 10.76 10.76c2.49 0 4.78-.84 6.6-2.26l-.02.02 8.34 8.36c.24.22.57.36.92.36.76 0 1.38-.62 1.38-1.38 0-.36-.14-.68-.36-.93s.03 0 .03 0Zm-16.84-6.94c-4.4 0-7.96-3.58-7.96-7.97s3.57-7.97 7.97-7.97 7.97 3.57 7.97 7.97v.03c-.02 4.39-3.59 7.95-7.98 7.95Z"
+                  ></path></svg></span
+            ></span>
+          </div>
+        </div>
+        <div class="View__StyledView-vhlnnj-0 iqzPzZ">
+          <div class="View__StyledView-sc-12w2o94-0 hipQUb">
+            <span
+              display="inline-block"
+              class="Spacer__StyledSpacer-wgrxh3-0 ezuXFR"
+            ></span
+            ><button
+              data-button-use="tertiary-extra-light"
+              tabindex="0"
+              data-test-id="crm-object-table-export-button"
+              aria-disabled="false"
+              data-fnd-button="t"
+              type="button"
+              class="PrivateButton__StyledButton-q8k43f-0 kWSvAK"
+            >
+              <span
+                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                ><i18n-string
+                  data-locale-at-render="en-gb"
+                  data-key="crmObjectTable.export.exportButton.baseCase.buttonText"
+                  >Export</i18n-string
+                ></span
+              ></button
+            ><span
+              display="inline-block"
+              class="Spacer__StyledSpacer-wgrxh3-0 ezuXFR"
+            ></span
+            ><button
+              data-button-use="tertiary-extra-light"
+              tabindex="0"
+              data-test-id="crm-object-table-edit-columns-button"
+              aria-disabled="false"
+              data-fnd-button="t"
+              type="button"
+              class="PrivateButton__StyledButton-q8k43f-0 kWSvAK"
+            >
+              <span
+                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                ><i18n-string
+                  data-locale-at-render="en-gb"
+                  data-key="crmObjectTable.editColumns.editColumnsButton.baseCase.buttonText"
+                  >Edit columns</i18n-string
+                ></span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="View__StyledView-sc-12w2o94-0 hvWCEO">
+      <div class="Flex__StyledFlex-sc-1ar0xvd-0 kMXSgo">
+        <div class="ScrollOverhang__Wrapper-sc-1wiakh-0 ingctO">
+          <div
+            class="StyledTableComponents__ScrollWindow-sc-1sptger-0 cOlWgw"
+            tabindex="0"
+          >
+            <div
+              class="StyledTableComponents__TableContainer-sc-1sptger-1 hJuajZ"
+            >
+              <table
+                data-onboarding="grid-table"
+                data-table-external-id="framework-data-table"
+                data-test-id="framework-data-table"
+                data-test-loading="false"
+                class="Table__StyledTable-sc-1gt972e-0 dgiWxn"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      data-test-id="checkbox-select-all-container"
+                      data-selection-column="true"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 fqvIJy">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-all"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select all records."
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="0"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-dealname"
+                      data-test-id="header-0-3-dealname"
+                      aria-disabled="false"
+                      role="columnheader"
+                      class="sc-AxjAm kWuZwF sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="0"
+                        data-test-id="content-component-dnd-dealname"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy"></div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                  >
+                                    Deal Name
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div class="View__StyledView-sc-12w2o94-0 iVoaeO">
+                              <span
+                                aria-label="Press to sort."
+                                aria-live="polite"
+                                class="TableSortArrows__StyledSpan-fa8u8w-0 LAYqw"
+                                ><svg
+                                  role="presentation"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 7.5 14"
+                                >
+                                  <polygon
+                                    points="7.5 5 0 5 3.75 0 7.5 5"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon>
+                                  <polygon
+                                    points="0 9 7.5 9 3.75 14 0 9"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon></svg
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-dealname"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="1"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-associations.1-18"
+                      data-test-id="header-0-3-associations.1-18"
+                      aria-disabled="true"
+                      role="columnheader"
+                      class="sc-AxjAm kVKGaC sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="1"
+                        data-test-id="content-component-dnd-associations.1-18"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy">
+                            <div draggable="true">
+                              <span
+                                data-test-id="drag-header-0-3-associations.1-18"
+                                class="chgwgr"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                  >
+                                    Deal → Invoicing Entities
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div
+                              class="View__StyledView-sc-12w2o94-0 iVoaeO"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-associations.1-18"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="2"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-dealstage"
+                      data-test-id="header-0-3-dealstage"
+                      aria-disabled="false"
+                      role="columnheader"
+                      class="sc-AxjAm kWuZwF sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="2"
+                        data-test-id="content-component-dnd-dealstage"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy">
+                            <div draggable="true">
+                              <span
+                                data-test-id="drag-header-0-3-dealstage"
+                                class="chgwgr"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                  >
+                                    Deal Stage
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div class="View__StyledView-sc-12w2o94-0 iVoaeO">
+                              <span
+                                aria-label="Press to sort."
+                                aria-live="polite"
+                                class="TableSortArrows__StyledSpan-fa8u8w-0 LAYqw"
+                                ><svg
+                                  role="presentation"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 7.5 14"
+                                >
+                                  <polygon
+                                    points="7.5 5 0 5 3.75 0 7.5 5"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon>
+                                  <polygon
+                                    points="0 9 7.5 9 3.75 14 0 9"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon></svg
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-dealstage"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="3"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-closedate"
+                      data-test-id="header-0-3-closedate"
+                      aria-disabled="false"
+                      role="columnheader"
+                      class="sc-AxjAm kWuZwF sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="3"
+                        data-test-id="content-component-dnd-closedate"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy">
+                            <div draggable="true">
+                              <span
+                                data-test-id="drag-header-0-3-closedate"
+                                class="chgwgr"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                  >
+                                    <i18n-string
+                                      data-locale-at-render="en-gb"
+                                      data-key="datatable.dateTimeCell.header"
+                                      >Close Date (GMT+1)</i18n-string
+                                    >
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div class="View__StyledView-sc-12w2o94-0 iVoaeO">
+                              <span
+                                aria-label="Press to sort."
+                                aria-live="polite"
+                                class="TableSortArrows__StyledSpan-fa8u8w-0 LAYqw"
+                                ><svg
+                                  role="presentation"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 7.5 14"
+                                >
+                                  <polygon
+                                    points="7.5 5 0 5 3.75 0 7.5 5"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon>
+                                  <polygon
+                                    points="0 9 7.5 9 3.75 14 0 9"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon></svg
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-closedate"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="4"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-hubspot_owner_id"
+                      data-test-id="header-0-3-hubspot_owner_id"
+                      aria-disabled="false"
+                      role="columnheader"
+                      class="sc-AxjAm kWuZwF sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="4"
+                        data-test-id="content-component-dnd-hubspot_owner_id"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy">
+                            <div draggable="true">
+                              <span
+                                data-test-id="drag-header-0-3-hubspot_owner_id"
+                                class="chgwgr"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                  >
+                                    Deal owner
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div class="View__StyledView-sc-12w2o94-0 iVoaeO">
+                              <span
+                                aria-label="Press to sort."
+                                aria-live="polite"
+                                class="TableSortArrows__StyledSpan-fa8u8w-0 LAYqw"
+                                ><svg
+                                  role="presentation"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 7.5 14"
+                                >
+                                  <polygon
+                                    points="7.5 5 0 5 3.75 0 7.5 5"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon>
+                                  <polygon
+                                    points="0 9 7.5 9 3.75 14 0 9"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon></svg
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-hubspot_owner_id"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="5"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-amount"
+                      data-test-id="header-0-3-amount"
+                      aria-disabled="false"
+                      role="columnheader"
+                      class="sc-AxjAm kWuZwF sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="5"
+                        data-test-id="content-component-dnd-amount"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy">
+                            <div draggable="true">
+                              <span
+                                data-test-id="drag-header-0-3-amount"
+                                class="chgwgr"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 fGwCnx"
+                                  >
+                                    Amount
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div class="View__StyledView-sc-12w2o94-0 iVoaeO">
+                              <span
+                                aria-label="Press to sort."
+                                aria-live="polite"
+                                class="TableSortArrows__StyledSpan-fa8u8w-0 LAYqw"
+                                ><svg
+                                  role="presentation"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 7.5 14"
+                                >
+                                  <polygon
+                                    points="7.5 5 0 5 3.75 0 7.5 5"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon>
+                                  <polygon
+                                    points="0 9 7.5 9 3.75 14 0 9"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon></svg
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-amount"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th
+                      data-column-index="6"
+                      data-test-width="250"
+                      data-table-external-id="header-0-3-create_xero_invoice"
+                      data-test-id="header-0-3-create_xero_invoice"
+                      aria-disabled="false"
+                      role="columnheader"
+                      class="sc-AxjAm kWuZwF sc-fzplWN hZkuPt"
+                      tabindex="0"
+                    >
+                      <div
+                        data-observer-type="COLUMN"
+                        data-observer-id="6"
+                        data-test-id="content-component-dnd-create_xero_invoice"
+                        style="
+                          width: 100%;
+                          height: 100%;
+                          display: flex;
+                          align-items: center;
+                        "
+                      >
+                        <div class="Flex__StyledFlex-sc-1ar0xvd-0 kjfmph">
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              class="HeaderLeftBorder-sc-1vfmz1c-0 fcmHbR"
+                            ></div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 dTRfcy">
+                            <div draggable="true">
+                              <span
+                                data-test-id="drag-header-0-3-create_xero_invoice"
+                                class="chgwgr"
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jQwEbq">
+                            <span
+                              data-content="true"
+                              class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                              ><span
+                                class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                                ><span
+                                  ><div
+                                    data-test-id="truncated-object-label"
+                                    class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                  >
+                                    Create Xero Invoice
+                                  </div></span
+                                ></span
+                              ></span
+                            >
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <div class="View__StyledView-sc-12w2o94-0 iVoaeO">
+                              <span
+                                aria-label="Press to sort."
+                                aria-live="polite"
+                                class="TableSortArrows__StyledSpan-fa8u8w-0 LAYqw"
+                                ><svg
+                                  role="presentation"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 7.5 14"
+                                >
+                                  <polygon
+                                    points="7.5 5 0 5 3.75 0 7.5 5"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon>
+                                  <polygon
+                                    points="0 9 7.5 9 3.75 14 0 9"
+                                    class="sc-fznyAO hdDwJr"
+                                  ></polygon></svg
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jeYGWe">
+                            <button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              aria-label="Open context menu"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 hqokJ"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><svg
+                                  aria-hidden="true"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 32 32"
+                                  focusable="false"
+                                  data-icon-name="VerticalMenu"
+                                  class="StyledIcon-sc-50rquo-0 jOIdcU"
+                                >
+                                  <path
+                                    d="M16 2c1.93 0 3.5 1.57 3.5 3.5S17.93 9 16 9s-3.5-1.57-3.5-3.5S14.07 2 16 2m0 10.51c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5m0 10.5c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5"
+                                  ></path></svg
+                              ></span>
+                            </button>
+                          </div>
+                          <div class="Box__StyledBox-sc-1nxt6jd-0 jBnbKW">
+                            <div
+                              data-test-id="resize-header-0-3-create_xero_invoice"
+                              class="ResizeAffordance-fi4bth-0 hSsZeA"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    data-test-id="row-236266772724"
+                    data-observer-type="ROW"
+                    data-observer-id="0"
+                    class="RowComponent__StyledRowComponent-sc-1o447xb-0 bLARmP"
+                  >
+                    <td data-selection-column="true">
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 iZWja-d">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-row-236266772724"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select row"
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-column-index="0"
+                      data-table-external-id="cell-0-3-dealname-236266772724"
+                      data-test-id="cell-0-3-dealname-236266772724"
+                      class="TableHoverCell__StyledTableHoverCell-zdzbx9-0 jDosYj"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 csFtYC">
+                        <div class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe">
+                          <span
+                            data-content-hovered="false"
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                              ><span
+                                ><div
+                                  class="View__StyledView-sc-12w2o94-0 ccYAMb"
+                                >
+                                  <a
+                                    data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                                    href="https://app-eu1.hubspot.com/contacts/146255379/record/0-3/236266772724"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    data-link="true"
+                                    class="Link__StyledLink-zg645o-2 cEYByF"
+                                    ><span
+                                      data-content="true"
+                                      class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                                      ><span
+                                        class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                                        ><span
+                                          ><div
+                                            data-test-id="truncated-object-label"
+                                            class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                          >
+                                            <span>Denis Deal 5 Test</span>
+                                          </div></span
+                                        ></span
+                                      ></span
+                                    ></a
+                                  >
+                                </div></span
+                              ></span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          order="3"
+                          class="Box__StyledBox-sc-1nxt6jd-0 iBLivu"
+                        >
+                          <span
+                            class="TableHoverContent__StyledSpan-xzh6jt-0 cIQQPQ"
+                            style=""
+                            ><button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              data-test-id="preview-236266772724"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 fSejIM"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><i18n-string
+                                  data-locale-at-render="en-gb"
+                                  data-key="crmObjectTable.cells.labelCell.hoverContent.preview"
+                                  >Preview</i18n-string
+                                ></span
+                              >
+                            </button></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-associations.1-18-236266772724"
+                      data-test-id="cell-0-3-associations.1-18-236266772724"
+                      data-column-index="1"
+                    >
+                      <span data-test-id="empty-state">--</span>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-dealstage-236266772724"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="2"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>Appointment Scheduled (Deals pipeline)</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-closedate-236266772724"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="3"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>30 Jun 2025 17:26 GMT+1</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-hubspot_owner_id-236266772724"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="4"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <div class="Flex__StyledFlex-sc-1ar0xvd-0 bmfHtu">
+                            <div
+                              class="AvatarCell__AvatarContainer-lj8bci-0 kAbFfU"
+                            >
+                              <div
+                                data-test-id="AvatarDisplay-switchComponent"
+                                data-tooltip-loaded="true"
+                                tabindex="0"
+                                class="AvatarWrapper-cx8clz-0 hIxPGG"
+                              >
+                                <div
+                                  data-size="xs"
+                                  data-test-id="content-holder"
+                                  data-type="hubSpotUserEmail"
+                                  type="hubSpotUserEmail"
+                                  class="AvatarContentHolder__ContentHolder-sc-1hw63x0-0 kqebuL"
+                                >
+                                  <svg
+                                    viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    data-source="known-src"
+                                    data-test-id="avatar-svg-image"
+                                    class="sc-fzqBZW sc-fzqNJr egiPTp"
+                                  ></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe"
+                            >
+                              <div
+                                data-test-id="truncated-object-label"
+                                class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                              >
+                                Denis Garcia (denis.garcia@hinomi.co)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-amount-236266772724"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="5"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <span></span>
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span data-selenium-test="currency-component-loaded"
+                            ><span>€789</span></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-create_xero_invoice-236266772724"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="6"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span
+                            >https://hook.eu2.make.com/of2xi2g4otdxhpj68knkcca6cfn8jq4y?deal_id=236266772724</span
+                          >
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    data-test-id="row-236894234832"
+                    data-observer-type="ROW"
+                    data-observer-id="1"
+                    class="RowComponent__StyledRowComponent-sc-1o447xb-0 bLARmP"
+                  >
+                    <td data-selection-column="true">
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 iZWja-d">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-row-236894234832"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select row"
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-column-index="0"
+                      data-table-external-id="cell-0-3-dealname-236894234832"
+                      data-test-id="cell-0-3-dealname-236894234832"
+                      class="TableHoverCell__StyledTableHoverCell-zdzbx9-0 jDosYj"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 csFtYC">
+                        <div class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe">
+                          <span
+                            data-content-hovered="false"
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                              ><span
+                                ><div
+                                  class="View__StyledView-sc-12w2o94-0 ccYAMb"
+                                >
+                                  <a
+                                    data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                                    href="https://app-eu1.hubspot.com/contacts/146255379/record/0-3/236894234832"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    data-link="true"
+                                    class="Link__StyledLink-zg645o-2 cEYByF"
+                                    ><span
+                                      data-content="true"
+                                      class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                                      ><span
+                                        class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                                        ><span
+                                          ><div
+                                            data-test-id="truncated-object-label"
+                                            class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                          >
+                                            <span>Denis Deal 4 Test</span>
+                                          </div></span
+                                        ></span
+                                      ></span
+                                    ></a
+                                  >
+                                </div></span
+                              ></span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          order="3"
+                          class="Box__StyledBox-sc-1nxt6jd-0 iBLivu"
+                        >
+                          <span
+                            class="TableHoverContent__StyledSpan-xzh6jt-0 hdHMnL"
+                            style=""
+                            ><button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              data-test-id="preview-236894234832"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 fSejIM"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><i18n-string
+                                  data-locale-at-render="en-gb"
+                                  data-key="crmObjectTable.cells.labelCell.hoverContent.preview"
+                                  >Preview</i18n-string
+                                ></span
+                              >
+                            </button></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-associations.1-18-236894234832"
+                      data-test-id="cell-0-3-associations.1-18-236894234832"
+                      data-column-index="1"
+                    >
+                      <span data-test-id="empty-state">--</span>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-dealstage-236894234832"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="2"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>Appointment Scheduled (Deals pipeline)</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-closedate-236894234832"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="3"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>30 Jun 2025 17:09 GMT+1</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-hubspot_owner_id-236894234832"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="4"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <div class="Flex__StyledFlex-sc-1ar0xvd-0 bmfHtu">
+                            <div
+                              class="AvatarCell__AvatarContainer-lj8bci-0 kAbFfU"
+                            >
+                              <div
+                                data-test-id="AvatarDisplay-switchComponent"
+                                data-tooltip-loaded="true"
+                                tabindex="0"
+                                class="AvatarWrapper-cx8clz-0 hIxPGG"
+                              >
+                                <div
+                                  data-size="xs"
+                                  data-test-id="content-holder"
+                                  data-type="hubSpotUserEmail"
+                                  type="hubSpotUserEmail"
+                                  class="AvatarContentHolder__ContentHolder-sc-1hw63x0-0 kqebuL"
+                                >
+                                  <svg
+                                    viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    data-source="known-src"
+                                    data-test-id="avatar-svg-image"
+                                    class="sc-fzqBZW sc-fzqNJr egiPTp"
+                                  ></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe"
+                            >
+                              <div
+                                data-test-id="truncated-object-label"
+                                class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                              >
+                                Denis Garcia (denis.garcia@hinomi.co)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-amount-236894234832"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="5"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <span></span>
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span data-selenium-test="currency-component-loaded"
+                            ><span>€749</span></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-create_xero_invoice-236894234832"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="6"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span
+                            >https://hook.eu2.make.com/of2xi2g4otdxhpj68knkcca6cfn8jq4y?deal_id=236894234832</span
+                          >
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    data-test-id="row-236884355316"
+                    data-observer-type="ROW"
+                    data-observer-id="2"
+                    class="RowComponent__StyledRowComponent-sc-1o447xb-0 bLARmP"
+                  >
+                    <td data-selection-column="true">
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 iZWja-d">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-row-236884355316"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select row"
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-column-index="0"
+                      data-table-external-id="cell-0-3-dealname-236884355316"
+                      data-test-id="cell-0-3-dealname-236884355316"
+                      class="TableHoverCell__StyledTableHoverCell-zdzbx9-0 jDosYj"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 csFtYC">
+                        <div class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe">
+                          <span
+                            data-content-hovered="false"
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                              ><span
+                                ><div
+                                  class="View__StyledView-sc-12w2o94-0 ccYAMb"
+                                >
+                                  <a
+                                    data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                                    href="https://app-eu1.hubspot.com/contacts/146255379/record/0-3/236884355316"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    data-link="true"
+                                    class="Link__StyledLink-zg645o-2 cEYByF"
+                                    ><span
+                                      data-content="true"
+                                      class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                                      ><span
+                                        class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                                        ><span
+                                          ><div
+                                            data-test-id="truncated-object-label"
+                                            class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                          >
+                                            <span>Denis Deal 3 Test</span>
+                                          </div></span
+                                        ></span
+                                      ></span
+                                    ></a
+                                  >
+                                </div></span
+                              ></span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          order="3"
+                          class="Box__StyledBox-sc-1nxt6jd-0 feahsz"
+                        >
+                          <span
+                            class="TableHoverContent__StyledSpan-xzh6jt-0 lli"
+                            ><button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              data-test-id="preview-236884355316"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 fSejIM"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><i18n-string
+                                  data-locale-at-render="en-gb"
+                                  data-key="crmObjectTable.cells.labelCell.hoverContent.preview"
+                                  >Preview</i18n-string
+                                ></span
+                              >
+                            </button></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-associations.1-18-236884355316"
+                      data-test-id="cell-0-3-associations.1-18-236884355316"
+                      data-column-index="1"
+                    >
+                      <span data-test-id="empty-state">--</span>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-dealstage-236884355316"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="2"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>Qualified To Buy (Deals pipeline)</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-closedate-236884355316"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="3"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>30 Jun 2025 16:52 GMT+1</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-hubspot_owner_id-236884355316"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="4"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <div class="Flex__StyledFlex-sc-1ar0xvd-0 bmfHtu">
+                            <div
+                              class="AvatarCell__AvatarContainer-lj8bci-0 kAbFfU"
+                            >
+                              <div
+                                data-test-id="AvatarDisplay-switchComponent"
+                                data-tooltip-loaded="true"
+                                tabindex="0"
+                                class="AvatarWrapper-cx8clz-0 hIxPGG"
+                              >
+                                <div
+                                  data-size="xs"
+                                  data-test-id="content-holder"
+                                  data-type="hubSpotUserEmail"
+                                  type="hubSpotUserEmail"
+                                  class="AvatarContentHolder__ContentHolder-sc-1hw63x0-0 kqebuL"
+                                >
+                                  <svg
+                                    viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    data-source="known-src"
+                                    data-test-id="avatar-svg-image"
+                                    class="sc-fzqBZW sc-fzqNJr egiPTp"
+                                  ></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe"
+                            >
+                              <div
+                                data-test-id="truncated-object-label"
+                                class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                              >
+                                Denis Garcia (denis.garcia@hinomi.co)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-amount-236884355316"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="5"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <span></span>
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span data-selenium-test="currency-component-loaded"
+                            ><span>€459</span></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-create_xero_invoice-236884355316"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="6"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>--</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    data-test-id="row-224285619413"
+                    data-observer-type="ROW"
+                    data-observer-id="3"
+                    class="RowComponent__StyledRowComponent-sc-1o447xb-0 bLARmP"
+                  >
+                    <td data-selection-column="true">
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 iZWja-d">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-row-224285619413"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select row"
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-column-index="0"
+                      data-table-external-id="cell-0-3-dealname-224285619413"
+                      data-test-id="cell-0-3-dealname-224285619413"
+                      class="TableHoverCell__StyledTableHoverCell-zdzbx9-0 jDosYj"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 csFtYC">
+                        <div class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe">
+                          <span
+                            data-content-hovered="false"
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                              ><span
+                                ><div
+                                  class="View__StyledView-sc-12w2o94-0 ccYAMb"
+                                >
+                                  <a
+                                    data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                                    href="https://app-eu1.hubspot.com/contacts/146255379/record/0-3/224285619413"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    data-link="true"
+                                    class="Link__StyledLink-zg645o-2 cEYByF"
+                                    ><span
+                                      data-content="true"
+                                      class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                                      ><span
+                                        class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                                        ><span
+                                          ><div
+                                            data-test-id="truncated-object-label"
+                                            class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                          >
+                                            <span>Denis Test Deal EU</span>
+                                          </div></span
+                                        ></span
+                                      ></span
+                                    ></a
+                                  >
+                                </div></span
+                              ></span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          order="3"
+                          class="Box__StyledBox-sc-1nxt6jd-0 feahsz"
+                        >
+                          <span
+                            class="TableHoverContent__StyledSpan-xzh6jt-0 lli"
+                            ><button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              data-test-id="preview-224285619413"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 fSejIM"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><i18n-string
+                                  data-locale-at-render="en-gb"
+                                  data-key="crmObjectTable.cells.labelCell.hoverContent.preview"
+                                  >Preview</i18n-string
+                                ></span
+                              >
+                            </button></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-associations.1-18-224285619413"
+                      data-test-id="cell-0-3-associations.1-18-224285619413"
+                      data-column-index="1"
+                    >
+                      <div
+                        data-test-id="truncated-object-label"
+                        class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                      >
+                        <a
+                          data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                          href="https://app-eu1.hubspot.com/contacts/146255379/record/2-143302938/162548145338"
+                          tabindex="0"
+                          aria-disabled="false"
+                          data-link="true"
+                          class="Link__StyledLink-zg645o-2 cEYByF"
+                          ><span
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                              ><span>Hinomi SAS</span></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-dealstage-224285619413"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="2"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>Contract Sent (Deals pipeline)</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-closedate-224285619413"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="3"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>1 Jun 2025 00:58 GMT+1</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-hubspot_owner_id-224285619413"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="4"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <div class="Flex__StyledFlex-sc-1ar0xvd-0 bmfHtu">
+                            <div
+                              class="AvatarCell__AvatarContainer-lj8bci-0 kAbFfU"
+                            >
+                              <div
+                                data-test-id="AvatarDisplay-switchComponent"
+                                data-tooltip-loaded="true"
+                                tabindex="0"
+                                class="AvatarWrapper-cx8clz-0 hIxPGG"
+                              >
+                                <div
+                                  data-size="xs"
+                                  data-test-id="content-holder"
+                                  data-type="hubSpotUserEmail"
+                                  type="hubSpotUserEmail"
+                                  class="AvatarContentHolder__ContentHolder-sc-1hw63x0-0 kqebuL"
+                                >
+                                  <svg
+                                    viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    data-source="known-src"
+                                    data-test-id="avatar-svg-image"
+                                    class="sc-fzqBZW sc-fzqNJr egiPTp"
+                                  ></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe"
+                            >
+                              <div
+                                data-test-id="truncated-object-label"
+                                class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                              >
+                                Denis Garcia (denis.garcia@hinomi.co)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-amount-224285619413"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="5"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <span></span>
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span data-selenium-test="currency-component-loaded"
+                            ><span>€749</span></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-create_xero_invoice-224285619413"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="6"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span
+                            >https://hook.eu2.make.com/of2xi2g4otdxhpj68knkcca6cfn8jq4y?deal_id=236266772724</span
+                          >
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    data-test-id="row-222987533516"
+                    data-observer-type="ROW"
+                    data-observer-id="4"
+                    class="RowComponent__StyledRowComponent-sc-1o447xb-0 bLARmP"
+                  >
+                    <td data-selection-column="true">
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 iZWja-d">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-row-222987533516"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select row"
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-column-index="0"
+                      data-table-external-id="cell-0-3-dealname-222987533516"
+                      data-test-id="cell-0-3-dealname-222987533516"
+                      class="TableHoverCell__StyledTableHoverCell-zdzbx9-0 jDosYj"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 csFtYC">
+                        <div class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe">
+                          <span
+                            data-content-hovered="false"
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                              ><span
+                                ><div
+                                  class="View__StyledView-sc-12w2o94-0 ccYAMb"
+                                >
+                                  <a
+                                    data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                                    href="https://app-eu1.hubspot.com/contacts/146255379/record/0-3/222987533516"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    data-link="true"
+                                    class="Link__StyledLink-zg645o-2 cEYByF"
+                                    ><span
+                                      data-content="true"
+                                      class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                                      ><span
+                                        class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                                        ><span
+                                          ><div
+                                            data-test-id="truncated-object-label"
+                                            class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                          >
+                                            <span>Denis Test Deal</span>
+                                          </div></span
+                                        ></span
+                                      ></span
+                                    ></a
+                                  >
+                                </div></span
+                              ></span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          order="3"
+                          class="Box__StyledBox-sc-1nxt6jd-0 feahsz"
+                        >
+                          <span
+                            class="TableHoverContent__StyledSpan-xzh6jt-0 lli"
+                            ><button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              data-test-id="preview-222987533516"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 fSejIM"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><i18n-string
+                                  data-locale-at-render="en-gb"
+                                  data-key="crmObjectTable.cells.labelCell.hoverContent.preview"
+                                  >Preview</i18n-string
+                                ></span
+                              >
+                            </button></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-associations.1-18-222987533516"
+                      data-test-id="cell-0-3-associations.1-18-222987533516"
+                      data-column-index="1"
+                    >
+                      <div
+                        data-test-id="truncated-object-label"
+                        class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                      >
+                        <a
+                          data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                          href="https://app-eu1.hubspot.com/contacts/146255379/record/2-143302938/161855100106"
+                          tabindex="0"
+                          aria-disabled="false"
+                          data-link="true"
+                          class="Link__StyledLink-zg645o-2 cEYByF"
+                          ><span
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                              ><span>Hinomi (UK) Limited</span></span
+                            ></span
+                          ></a
+                        >
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-dealstage-222987533516"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="2"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>Contract Sent (Deals pipeline)</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-closedate-222987533516"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="3"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>3 Jun 2025 12:23 GMT+1</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-hubspot_owner_id-222987533516"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="4"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <div class="Flex__StyledFlex-sc-1ar0xvd-0 bmfHtu">
+                            <div
+                              class="AvatarCell__AvatarContainer-lj8bci-0 kAbFfU"
+                            >
+                              <div
+                                data-test-id="AvatarDisplay-switchComponent"
+                                data-tooltip-loaded="true"
+                                tabindex="0"
+                                class="AvatarWrapper-cx8clz-0 hIxPGG"
+                              >
+                                <div
+                                  data-size="xs"
+                                  data-test-id="content-holder"
+                                  data-type="hubSpotUserEmail"
+                                  type="hubSpotUserEmail"
+                                  class="AvatarContentHolder__ContentHolder-sc-1hw63x0-0 kqebuL"
+                                >
+                                  <svg
+                                    viewBox="0 0 100 100"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    data-source="known-src"
+                                    data-test-id="avatar-svg-image"
+                                    class="sc-fzqBZW sc-fzqNJr egiPTp"
+                                  ></svg>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe"
+                            >
+                              <div
+                                data-test-id="truncated-object-label"
+                                class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                              >
+                                Denis Garcia (denis.garcia@hinomi.co)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-amount-222987533516"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="5"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <span></span>
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span data-selenium-test="currency-component-loaded"
+                            ><span>£479</span></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-create_xero_invoice-222987533516"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="6"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>--</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    data-test-id="row-218509124838"
+                    data-observer-type="ROW"
+                    data-observer-id="5"
+                    class="RowComponent__StyledRowComponent-sc-1o447xb-0 bLARmP"
+                  >
+                    <td data-selection-column="true">
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 iZWja-d">
+                        <div
+                          data-checkbox="true"
+                          data-test-id="checkbox-select-row-218509124838"
+                          class="ToggleInputWrapper__Wrapper-sc-8bkqqq-0 eOmfgS sc-AxhCb jcgbnX"
+                        >
+                          <label
+                            class="ToggleInputWrapper__Label-sc-8bkqqq-1 bOngMb"
+                            ><span
+                              class="ToggleInputWrapper__InnerSpan-sc-8bkqqq-2 igkaae"
+                              ><input
+                                aria-label="Select row"
+                                tabindex="0"
+                                type="checkbox"
+                                class="Checkbox__CheckboxInput-l75lsm-2 hHHUJJ"
+                                value="" /><span
+                                data-indicator="true"
+                                class="Checkbox__CheckboxIndicator-l75lsm-0 kntHPk"
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 15 15.343"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M1.013 8.11c0-.223.078-.412.234-.568l1.14-1.14c.155-.155.345-.233.568-.233s.413.077.57.233l2.46 2.47 5.492-5.5c.156-.156.346-.234.568-.234.224 0 .413.077.57.233l1.138 1.14c.156.155.234.345.234.568 0 .224-.078.414-.234.57l-6.06 6.06-1.14 1.14c-.155.155-.345.233-.568.233s-.413-.078-.57-.234l-1.138-1.14-3.03-3.03c-.156-.156-.234-.346-.234-.57z"
+                                    ></path></svg></span
+                                ><span
+                                  class="Checkbox__CheckboxIcon-l75lsm-1 bmYCoR"
+                                  ><svg
+                                    role="presentation"
+                                    viewBox="0 0 14 14"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M 2 6 L12 6 L12 9 L2 9 L2 6 z"
+                                    ></path></svg></span></span></span
+                          ></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-column-index="0"
+                      data-table-external-id="cell-0-3-dealname-218509124838"
+                      data-test-id="cell-0-3-dealname-218509124838"
+                      class="TableHoverCell__StyledTableHoverCell-zdzbx9-0 jDosYj"
+                    >
+                      <div class="Flex__StyledFlex-sc-1ar0xvd-0 csFtYC">
+                        <div class="MediaBody__StyledMediaBody-hm3bl7-0 kmGpqe">
+                          <span
+                            data-content-hovered="false"
+                            data-content="true"
+                            class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 jZnKPu"
+                            ><span
+                              class="TruncateString__TruncateStringInner-sc-17kkpvd-4 cirVCk"
+                              ><span
+                                ><div
+                                  class="View__StyledView-sc-12w2o94-0 ccYAMb"
+                                >
+                                  <a
+                                    data-speculation-target="crm-links-CRM_OBJECT_RECORD"
+                                    href="https://app-eu1.hubspot.com/contacts/146255379/record/0-3/218509124838"
+                                    tabindex="0"
+                                    aria-disabled="false"
+                                    data-link="true"
+                                    class="Link__StyledLink-zg645o-2 cEYByF"
+                                    ><span
+                                      data-content="true"
+                                      class="TruncateString__TruncateStringContainer-sc-17kkpvd-3 cvukNX"
+                                      ><span
+                                        class="TruncateString__TruncateStringInner-sc-17kkpvd-4 bwFHCv"
+                                        ><span
+                                          ><div
+                                            data-test-id="truncated-object-label"
+                                            class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                                          >
+                                            <span
+                                              >HubSpot - New Deal (Sample
+                                              Deal)</span
+                                            >
+                                          </div></span
+                                        ></span
+                                      ></span
+                                    ></a
+                                  >
+                                </div></span
+                              ></span
+                            ></span
+                          >
+                        </div>
+                        <div
+                          order="3"
+                          class="Box__StyledBox-sc-1nxt6jd-0 feahsz"
+                        >
+                          <span
+                            class="TableHoverContent__StyledSpan-xzh6jt-0 lli"
+                            ><button
+                              data-button-use="tertiary-light"
+                              tabindex="0"
+                              data-test-id="preview-218509124838"
+                              aria-disabled="false"
+                              data-fnd-button="t"
+                              type="button"
+                              class="PrivateButton__StyledButton-q8k43f-0 fSejIM"
+                            >
+                              <span
+                                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                                ><i18n-string
+                                  data-locale-at-render="en-gb"
+                                  data-key="crmObjectTable.cells.labelCell.hoverContent.preview"
+                                  >Preview</i18n-string
+                                ></span
+                              >
+                            </button></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-associations.1-18-218509124838"
+                      data-test-id="cell-0-3-associations.1-18-218509124838"
+                      data-column-index="1"
+                    >
+                      <span data-test-id="empty-state">--</span>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-dealstage-218509124838"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="2"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>Closed Lost (Deals pipeline)</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-closedate-218509124838"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="3"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>1 Jun 2025 00:19 GMT+1</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-hubspot_owner_id-218509124838"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="4"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <i18n-string
+                            data-locale-at-render="en-gb"
+                            data-key="datatable.userCell.noOwner"
+                            >No owner</i18n-string
+                          >
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-amount-218509124838"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="5"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <span></span>
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span data-selenium-test="currency-component-loaded"
+                            ><span>US$1,000</span></span
+                          >
+                        </div>
+                      </div>
+                    </td>
+                    <td
+                      data-table-external-id="cell-0-3-create_xero_invoice-218509124838"
+                      data-test-id="framework-data-table-editable-cell"
+                      data-column-index="6"
+                      tabindex="0"
+                      role="button"
+                      aria-invalid="false"
+                      aria-pressed="false"
+                      data-editable-cell="true"
+                      data-invalid="false"
+                      data-pressed="false"
+                    >
+                      <div
+                        class="StyledEditCellComponents__EditCellContentAndValidationAlertWrapper-sc-1514m55-0 kwdnqV"
+                      >
+                        <div
+                          data-test-id="truncated-object-label"
+                          class="TruncateDiv__NoWrapDiv-jbhy9o-0 hDOVhy"
+                        >
+                          <span>--</span>
+                        </div>
+                        <span></span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="Overhang__StyledOverhang-sc-14vyjmf-0 fQVdQw"></div>
+          <div class="Overhang__StyledOverhang-sc-14vyjmf-0 cfPgdp"></div>
+          <div class="Overhang__StyledOverhang-sc-14vyjmf-0 hQKLrA"></div>
+          <div class="Overhang__StyledOverhang-sc-14vyjmf-0 iqtFdy"></div>
+        </div>
+      </div>
+    </div>
+    <div class="Box__StyledBox-sc-1nxt6jd-0 bzlVHZ">
+      <div class="Flex__StyledFlex-sc-1ar0xvd-0 ifZjsB">
+        <nav
+          aria-label="Pagination"
+          data-current-page="1"
+          role="navigation"
+          data-test-id="table-paginator"
+          class="Paginator__StyledNav-sc-1k7bgcx-0 jPkThq"
+        >
+          <span
+            ><button
+              data-button-use="transparent"
+              tabindex="-1"
+              aria-label="Previous page"
+              data-prev-page="true"
+              aria-disabled="true"
+              data-fnd-button="t"
+              type="button"
+              class="PrivateButton__StyledButton-q8k43f-0 dpHFbK"
+            >
+              <span
+                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                ><svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                  data-icon-name="Left"
+                  class="StyledIcon-sc-50rquo-0 ihqkLI"
+                >
+                  <path
+                    d="M22.95 2.48c-.31-.3-.74-.48-1.21-.48-.5 0-.94.21-1.26.54L8.83 14.73v.08l-.11.18c-.07.09-.13.19-.18.29-.03.1-.05.21-.07.32-.03.1-.05.22-.06.33 0 .13.03.24.06.35.01.11.04.22.07.32.06.1.12.2.19.29s.11.17.11.17v.08l11.65 12.19c.32.4.82.66 1.37.66.97 0 1.75-.78 1.75-1.75 0-.52-.23-.99-.59-1.31s-10.5-11.02-10.5-11.02l10.5-11.02c.29-.31.46-.72.46-1.18 0-.48-.2-.92-.52-1.24Z"
+                  ></path></svg
+                ><i18n-string
+                  data-locale-at-render="en-gb"
+                  data-key="foundations-components.Paginator.previousPage.label"
+                  >Prev</i18n-string
+                ></span
+              >
+            </button></span
+          ><span class="Paginator__NumberSpan-sc-1k7bgcx-1 aWiTC"
+            ><button
+              data-button-use="transparent"
+              tabindex="0"
+              data-active="true"
+              data-page-number="1"
+              aria-disabled="false"
+              aria-current="true"
+              data-fnd-button="t"
+              type="button"
+              class="PrivateButton__StyledButton-q8k43f-0 dpHFbK"
+            >
+              <span
+                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                ><span class="ScreenReaderOnly__StyledSpan-sc-1yhq11h-0 iudNfG"
+                  ><i18n-string
+                    data-locale-at-render="en-gb"
+                    data-key="salesUI.UIPaginator.pageNumber.currentIndicator"
+                    >You are currently on </i18n-string
+                  ><i18n-string
+                    data-locale-at-render="en-gb"
+                    data-key="salesUI.UIPaginator.pageNumber.description"
+                    >Page
+                  </i18n-string></span
+                >1</span
+              >
+            </button></span
+          ><span
+            ><button
+              data-button-use="transparent"
+              tabindex="-1"
+              aria-label="Next page"
+              data-next-page="true"
+              aria-disabled="true"
+              data-fnd-button="t"
+              type="button"
+              class="PrivateButton__StyledButton-q8k43f-0 dpHFbK"
+            >
+              <span
+                class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+                ><i18n-string
+                  data-locale-at-render="en-gb"
+                  data-key="foundations-components.Paginator.nextPage.label"
+                  >Next</i18n-string
+                ><svg
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  focusable="false"
+                  data-icon-name="Right"
+                  class="StyledIcon-sc-50rquo-0 ihqkLI"
+                >
+                  <path
+                    d="M23.52 15.26c-.06-.11-.12-.21-.19-.3s-.11-.17-.11-.17v-.08L11.57 2.5c-.32-.31-.75-.5-1.23-.5-.97 0-1.75.78-1.75 1.75 0 .43.15.82.41 1.13S19.5 15.9 19.5 15.9L9 26.93c-.37.32-.59.79-.59 1.32 0 .97.78 1.75 1.75 1.75.55 0 1.05-.26 1.37-.66s11.65-12.2 11.65-12.2v-.08l.11-.18c.07-.09.13-.19.18-.29.03-.1.05-.21.07-.32.03-.1.05-.22.06-.33 0-.13-.03-.24-.06-.35s0-.03 0-.05c0-.1 0-.2-.02-.29Z"
+                  ></path></svg
+              ></span></button
+          ></span>
+        </nav>
+        <button
+          data-button-use="transparent"
+          tabindex="0"
+          data-test-id="table-page-size-selector"
+          data-test-value="25"
+          aria-haspopup="true"
+          aria-labelledby="abstractdropdown-button-content-4"
+          data-dropdown="true"
+          data-dropdown-open="false"
+          aria-readonly="false"
+          aria-owns="abstractdropdown-content-5"
+          aria-disabled="false"
+          aria-invalid="false"
+          data-fnd-button="t"
+          type="button"
+          class="PrivateButton__StyledButton-q8k43f-0 kflBzH"
+        >
+          <span class="PrivateButton__StyledButtonTextContainer-q8k43f-2 ixwKzy"
+            ><span
+              id="abstractdropdown-button-content-4"
+              class="AbstractDropdown__StyledButtonContents-sc-12tfurr-2 eNkwtP"
+              ><span
+                class="AbstractDropdown__StyledDropdownButtonLabel-sc-12tfurr-0 smqfX"
+                >25 per page</span
+              ><span
+                data-test-id="dropdown-caret"
+                class="DropdownCaret__StyledCaret-sc-28vybr-0 bYiXTQ"
+              ></span></span
+          ></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

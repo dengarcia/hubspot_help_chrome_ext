@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Hinomi HubSpot Enhancer",
+  "version": "1.0",
+  "description": "Adds a custom button to HubSpot Deals list table",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://app.hubspot.com/*",
+    "https://app-eu1.hubspot.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://app.hubspot.com/*", "https://app-eu1.hubspot.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
