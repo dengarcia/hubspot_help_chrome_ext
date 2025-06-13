@@ -28,8 +28,12 @@ document.addEventListener('contextmenu', (event) => {
   
   const dealId = findDealIdFromElement(event.target);
   
+  const hubId = window.location.pathname.split('/')[2];
+  const dealUrl = `${window.location.origin}/contacts/${hubId}/record/0-3/${dealId}`;
+  
   chrome.runtime.sendMessage({
     action: "setDealId",
-    dealId: dealId
+    dealId: dealId,
+    dealUrl: dealUrl
   });
 });
