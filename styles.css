@@ -1,0 +1,22 @@
+.hinomi-deal-button {
+  background-color: #ff7a00;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.hinomi-deal-button:hover {
+  background-color: #e56900;
+}
+
+.hinomi-button-cell {
+  text-align: center;
+  padding: 8px 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid #e4e9ef;
+}
